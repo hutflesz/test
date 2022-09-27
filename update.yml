@@ -1,0 +1,10 @@
+---
+- name: First test playbook update
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: Updating all 
+      yum:
+        name: '*'
+        state: latest
+  
