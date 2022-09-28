@@ -1,6 +1,6 @@
 ---
 - name: create dir
-  hosts: localhost
+  hosts: all
   tasks:
     - file:
         path: "{{ username }}dir"
