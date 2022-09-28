@@ -2,7 +2,8 @@
 - name: create dir
   hosts: localhost
   tasks:
- - file:
-     path: "{{ username }}dir"
-     owner: "{{ username }}"
-     state: directory
+    - file:
+        path: "{{ username }}dir"
+        owner: "{{ username }}"
+        state: directory
+     
