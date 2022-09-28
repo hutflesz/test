@@ -1,0 +1,7 @@
+---
+- name: create users
+  hosts: localhost
+  tasks:
+  - user:
+      name: "{{ username }}"
+      password: "{{ password }}"
