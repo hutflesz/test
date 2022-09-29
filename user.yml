@@ -2,6 +2,6 @@
 - name: create users
   hosts: all
   tasks:
-  - user:
-      name: "{{ username }}"
-      password: "{{ password }}"
+    - user:
+        name: "{{ username }}"
+        password: "{{ password | password_hash('sha512') }}" 
